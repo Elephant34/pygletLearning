@@ -1,6 +1,6 @@
 import pyglet
 
-window = pyglet.window.Window()
+window = pyglet.window.Window(500, 400, caption="Hello World")
 
 label = pyglet.text.Label(
     "Hello World",
@@ -12,8 +12,10 @@ label = pyglet.text.Label(
     anchor_y="center"
 )
 
+'''
 event_logger = pyglet.window.event.WindowEventLogger()
 window.push_handlers(event_logger)
+'''
 
 @window.event
 def on_draw():
